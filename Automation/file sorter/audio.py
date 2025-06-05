@@ -1,6 +1,6 @@
 import os 
 import shutil
-def serial_movie_sorter():
+def serial_movie_founder():
 
 #statics variable 
 
@@ -45,4 +45,4 @@ def serial_movie_sorter():
             break
         else:
             continue
-serial_movie_sorter()
+serial_movie_founder()
