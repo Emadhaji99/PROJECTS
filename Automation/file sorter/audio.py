@@ -38,7 +38,7 @@ def serial_movie_founder():
 # serial
         elif len(File_list)!=1:
                 Serial_root ,ext= os.path.splitext(File_list[0])
-                s_index=Serial_root.lower().find(".s")
+                s_index=Serial_root.lower().find(".s0")
                 serial_name=Serial_root[:s_index]
                 serial_path=os.path.join(main_path,serial_name)
                 if not os.path.exists(serial_path):
