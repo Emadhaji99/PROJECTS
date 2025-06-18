@@ -1,10 +1,18 @@
 import os 
+from pathlib import Path
 import shutil
 def serial_movie_founder():
 
 #statics variable 
-
-    main_path="C:\\project\\layer 1\\cinema"
+    str_path=input("enter your directory you want me to search : ")
+    if '\\' or "/" in str_path:
+        main_path=Path(str_path)
+        exten=main_path.suffix
+        drive=main_path.drive
+        if drive=="" and not exten=="":
+                raise ValueError("the path is not valid")
+    else:
+        raise ValueError("the path is not valid")
     movie_path=os.path.join(main_path,"Movie")
     if not os.path.exists(movie_path):
         os.makedirs(movie_path)
