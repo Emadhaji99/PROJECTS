@@ -11,7 +11,7 @@ def serial_movie_founder():
             exten=main_path.suffix
             drive=main_path.drive
             if (drive=="") or (not exten==""):
-                raise ValueError("the path is not valid")
+                raise ValueError("the path directory is not valid")
         else:
             raise ValueError("the path is not valid")
         movie_path=os.path.join(main_path,"Movie")
